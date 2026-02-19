@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url('https://media.istockphoto.com/id/1145785280/vector/abstract-geometric-shape-background.jpg?s=612x612&w=0&k=20&c=0GQmyKOvHH0w156nuBptK1Mu10Ml5Qx60OX6agjniEo=');
+            background-size: cover;   
+            height: 100vh;  
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 95%;
+            height: 95%;
+            background: rgba(234, 67, 233, 0.8);
+            
+            
+            
+        }
+       
+       nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       nav a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        position: relative;
+       }
+       nav a::before{
+        content: "";
+        width: 0%;
+        border-bottom: 2px solid orange;
+        position: absolute;
+        bottom: 0;
+        display: block;
+       }
+       nav a:hover:before{
+        width: 80%;
+        transition: 1s linear;
+       }
+       .text{
+        max-width: 450px;
+        color: white;
+        margin-top: 100px;
+        margin-left: 100px;
+       }
+       .text h1{
+        font-size: 50px;
+        padding-left: 10px;
+        border-left: 5px solid orange;
+       }
+       .text p{
+        margin: 20px 0px;
+        font-size: 20px;
+        text-align: justify;
+       }
+       button{
+        padding: 10px;
+        background: transparent;
+        border: 1px solid orange;
+        outline: none;
+        color: white;
+        border-radius: 5px;
+
+       }
+       .im{
+        width: 400px;
+        margin-top: -350px;
+        margin-left: 500px;
+        
+
+        border-radius: 10px;
+        display: flex;
+        
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+     <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLm7XIEeYPCt0S7kwp-XohfNvKtzJq-w_GsQ&s" alt="Portfolio image" width="100px"></a>
+        <a href="">Works</a>
+        <a href="">Contacts</a>
+     </nav>
+     <div class="text">
+        <h1>Mihir <br>
+            Web Developer
+        </h1>
+        <p>I am a Full stack developer from Vadodara.I can make any type of Website and app.</p>
+        <button>Read more</button> <br>
+        <br>
+        <br>
+
+
+        <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/500px-Facebook_logo_%28square%29.png" alt="" height="20px" width="20px"></a>
+        <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG8.png" alt="" height="20px" width="20px">
+         
+        <img src="https://t3.ftcdn.net/jpg/07/51/60/74/360_F_751607472_QRwEaMhILRDVfvySc6DWMNOxOutyEIzY.jpg"  class="im" height="400px" width="400px">
+     
+     </div>
+    
+    </div>
+</body>
+</html>
